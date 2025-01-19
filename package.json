@@ -1,0 +1,29 @@
+{
+  "name": "wp",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun index.ts",
+    "dev": "export DEBUG=grammy* && bun index.ts --watch",
+    "db:push": "drizzle-kit push"
+  },
+  "dependencies": {
+    "@formkit/tempo": "^0.1.1",
+    "@grammyjs/chat-members": "^1.1.0",
+    "@grammyjs/conversations": "^1.2.0",
+    "@grammyjs/files": "^1.1.1",
+    "@grammyjs/menu": "^1.2.1",
+    "@neondatabase/serverless": "^0.9.3",
+    "@parsedog/sdk": "npm:@jsr/parsedog__sdk@latest",
+    "drizzle-orm": "^0.31.2",
+    "grammy": "^1.24.1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "drizzle-kit": "^0.22.7",
+    "pg": "^8.12.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
